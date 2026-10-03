@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"
+    >
+
+    <!-- My CSS must come after Bootstrap -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Steppe Escape - Kazakhstan Travel Guide</title>
+</head>
+
+<body>
+    <!-- TASK 2: Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">Steppe Escape</a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNav"
+                aria-controls="mainNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destinations">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- TASK 2: Bootstrap Hero -->
+    <header id="home" class="bg-light py-5">
+        <div class="container py-4">
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-lg-7 order-2 order-lg-1">
+                    <p class="text-uppercase text-secondary fw-semibold mb-2">
+                        Explore Kazakhstan
+                    </p>
+                    <h1 class="display-4 fw-bold">Find your next steppe adventure.</h1>
+                    <p class="lead">
+                        A simple travel guide to mountains, canyons, lakes and wide-open landscapes.
+                    </p>
+
+                    <!-- Visible only on tablets/desktops -->
+                    <p class="d-none d-md-block text-secondary">
+                        Plan a weekend escape or build a longer route across Kazakhstan.
+                    </p>
+
+                    <a href="#destinations" class="btn btn-dark btn-lg">Explore destinations</a>
+                </div>
+
+                <div class="col-12 col-lg-5 order-1 order-lg-2">
+                    <img
+                        src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=900&q=80"
+                        class="img-fluid rounded-4 shadow"
+                        alt="Mountain landscape"
+                    >
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- TASK 1: Hand-made responsive section -->
+    <section id="destinations" class="handmade-section">
+        <div class="handmade-container">
+            <div class="handmade-heading">
+                <h2>Places worth discovering</h2>
+                <p>
+                    This section uses CSS Grid and mobile-first media queries without Bootstrap classes.
+                </p>
+            </div>
+
+            <div class="destination-grid">
+                <article class="destination-item">
+                    <div class="destination-icon">01</div>
+                    <h3>Charyn Canyon</h3>
+                    <p>
+                        Dramatic rock formations and a scenic valley make this a memorable day trip.
+                    </p>
+                </article>
+
+                <article class="destination-item">
+                    <div class="destination-icon">02</div>
+                    <h3>Kolsai Lakes</h3>
+                    <p>
+                        A peaceful mountain area known for clear lakes and hiking routes.
+                    </p>
+                </article>
+
+                <article class="destination-item">
+                    <div class="destination-icon">03</div>
+                    <h3>Mangystau</h3>
+                    <p>
+                        A remote landscape with unusual cliffs, deserts and wide open spaces.
+                    </p>
+                </article>
+
+                <article class="destination-item">
+                    <div class="destination-icon">04</div>
+                    <h3>Burabay</h3>
+                    <p>
+                        Forests, lakes and granite hills create a relaxing escape from the city.
+                    </p>
+                </article>
+
+                <article class="destination-item">
+                    <div class="destination-icon">05</div>
+                    <h3>Altyn-Emel</h3>
+                    <p>
+                        A national park with diverse landscapes and the famous Singing Dune.
+                    </p>
+                </article>
+
+                <article class="destination-item">
+                    <div class="destination-icon">06</div>
+                    <h3>Big Almaty Lake</h3>
+                    <p>
+                        A mountain lake surrounded by the scenery of the Trans-Ili Alatau.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- TASK 2: Bootstrap cards -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-4">
+                <p class="text-uppercase text-secondary fw-semibold mb-1">Quick ideas</p>
+                <h2 class="fw-bold">Choose your travel style</h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img
+                            src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top"
+                            alt="Mountain trip"
+                        >
+                        <div class="card-body">
+                            <h3 class="card-title h5">Mountain Escape</h3>
+                            <p class="card-text">
+                                Focus on hiking, lakes and fresh mountain air.
+                            </p>
+                            <a href="#contact" class="btn btn-outline-dark">Ask about it</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img
+                            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top"
+                            alt="Nature landscape"
+                        >
+                        <div class="card-body">
+                            <h3 class="card-title h5">Nature Weekend</h3>
+                            <p class="card-text">
+                                A short route for relaxing outside the city.
+                            </p>
+                            <a href="#contact" class="btn btn-outline-dark">Ask about it</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img
+                            src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top"
+                            alt="Travel road"
+                        >
+                        <div class="card-body">
+                            <h3 class="card-title h5">Road Adventure</h3>
+                            <p class="card-text">
+                                Build a longer route and discover several regions.
+                            </p>
+                            <a href="#contact" class="btn btn-outline-dark">Ask about it</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TASK 2: Bootstrap two-column section with ordering -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-12 col-lg-6 order-1">
+                    <h2 class="fw-bold">Why travel locally?</h2>
+                    <p>
+                        Kazakhstan has very different landscapes within one country.
+                        A short trip can take you from a city to mountains, lakes or desert scenery.
+                    </p>
+
+                    <div class="d-flex gap-3 flex-wrap">
+                        <span class="badge text-bg-dark p-2">Nature</span>
+                        <span class="badge text-bg-secondary p-2">Road trips</span>
+                        <span class="badge text-bg-dark p-2">Photography</span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 order-2">
+                    <img
+                        src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1000&q=80"
+                        class="img-fluid rounded-4"
+                        alt="Natural landscape"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TASK 2: Bootstrap accordion component -->
+    <section id="contact" class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-lg-5">
+                    <h2 class="fw-bold">Travel FAQ</h2>
+                    <p class="text-white-50">
+                        Some quick answers before planning a trip.
+                    </p>
+                </div>
+
+                <div class="col-12 col-lg-7">
+                    <div class="accordion" id="travelFaq">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button
+                                    class="accordion-button"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#faqOne"
+                                    aria-expanded="true"
+                                    aria-controls="faqOne"
+                                >
+                                    How should I start planning?
+                                </button>
+                            </h3>
+                            <div
+                                id="faqOne"
+                                class="accordion-collapse collapse show"
+                                data-bs-parent="#travelFaq"
+                            >
+                                <div class="accordion-body">
+                                    Choose one region first, then check transport, weather and the
+                                    amount of time you have.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#faqTwo"
+                                    aria-expanded="false"
+                                    aria-controls="faqTwo"
+                                >
+                                    What should I take?
+                                </button>
+                            </h3>
+                            <div
+                                id="faqTwo"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#travelFaq"
+                            >
+                                <div class="accordion-body">
+                                    Take comfortable shoes, water, weather-appropriate clothing and
+                                    any equipment needed for your route.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#faqThree"
+                                    aria-expanded="false"
+                                    aria-controls="faqThree"
+                                >
+                                    Can I make a short trip?
+                                </button>
+                            </h3>
+                            <div
+                                id="faqThree"
+                                class="accordion-collapse collapse"
+                                data-bs-parent="#travelFaq"
+                            >
+                                <div class="accordion-body">
+                                    Yes. Several destinations can work as short weekend trips,
+                                    depending on your starting city and transport.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="pt-5 mt-5 border-top border-secondary text-center text-white-50">
+                <p class="mb-0">Steppe Escape &copy; 2026</p>
+            </footer>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS bundle -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
+    ></script>
+</body>
+</html>

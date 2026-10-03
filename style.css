@@ -1,0 +1,115 @@
+/* Mobile-first: phone layout */
+.handmade-section {
+    padding: 60px 20px;
+    background: #f4f1ea;
+}
+
+.handmade-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.handmade-heading {
+    margin-bottom: 30px;
+}
+
+.handmade-heading p:first-child {
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.handmade-heading h2 {
+    margin: 0 0 12px;
+    font-size: 2rem;
+}
+
+.handmade-heading p:last-child {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+.destination-item {
+    padding: 24px;
+    background: white;
+    border: 1px solid #ddd7cb;
+    border-radius: 18px;
+}
+
+.destination-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    margin-bottom: 18px;
+    border-radius: 50%;
+    background: #222;
+    color: white;
+    font-weight: 700;
+}
+
+.destination-item h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+}
+
+.destination-item p {
+    margin: 0;
+    line-height: 1.6;
+    color: #5d5a54;
+}
+
+
+/* Tablet breakpoint:
+   1 column -> 2 columns
+   heading also becomes larger */
+@media (min-width: 768px) {
+    .handmade-section {
+        padding: 80px 32px;
+    }
+
+    .handmade-heading h2 {
+        font-size: 2.5rem;
+    }
+
+    .destination-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+    }
+}
+
+
+/* Laptop breakpoint:
+   2 columns -> 3 columns
+   spacing changes too */
+@media (min-width: 992px) {
+    .handmade-section {
+        padding: 100px 40px;
+    }
+
+    .handmade-heading {
+        margin-bottom: 40px;
+    }
+
+    .handmade-heading h2 {
+        font-size: 3rem;
+    }
+
+    .destination-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 26px;
+    }
+
+    .destination-item {
+        padding: 28px;
+    }
+}
