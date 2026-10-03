@@ -1,6 +1,6 @@
 # Task 3 comparison table
 
-| Criterion | Task 1 — Own CSS | Task 2 — Bootstrap |
+| Criterion | Task 1 - Own CSS | Task 2 - Bootstrap |
 |---|---|---|
 | Amount of code | I wrote the grid, breakpoints and spacing myself. | Bootstrap provides many grid and utility classes, so less custom CSS is needed. |
 | Control over design | I have direct control over every rule in the destination section. | Bootstrap gives a predefined system, while my CSS can still customize it. |
